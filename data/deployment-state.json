@@ -1,0 +1,16 @@
+{
+  "services": {
+    "api-gateway": {
+      "DEV": { "branch": "feature/TICKET-101", "deployedAt": "2026-06-30T10:00:00Z" },
+      "SQA": { "branch": "main",               "deployedAt": "2026-06-29T15:30:00Z" }
+    },
+    "auth-service": {
+      "DEV": { "branch": "feature/TICKET-234", "deployedAt": "2026-07-01T08:00:00Z" },
+      "SQA": { "branch": "release/v2.1",       "deployedAt": "2026-06-27T12:00:00Z" }
+    },
+    "notification-service": {
+      "DEV": { "branch": "main",               "deployedAt": "2026-06-28T09:00:00Z" },
+      "SQA": { "branch": "main",               "deployedAt": "2026-06-25T14:00:00Z" }
+    }
+  }
+}

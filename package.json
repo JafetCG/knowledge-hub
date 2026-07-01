@@ -1,0 +1,27 @@
+{
+  "name": "engineering-knowledge-hub",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "seed":       "node --loader ts-node/esm src/seed.ts",
+    "start":      "node --loader ts-node/esm src/index.ts",
+    "ingest":     "node --loader ts-node/esm src/modules/ingestion/meetingIngestion.ts",
+    "qa":         "node --loader ts-node/esm src/modules/qa/documentationQA.ts",
+    "errors":     "node --loader ts-node/esm src/modules/errors/errorKnowledgeBase.ts",
+    "deployment": "node --loader ts-node/esm src/modules/deployment/deploymentAgent.ts"
+  },
+  "dependencies": {
+    "@langchain/community": "^1.1.29",
+    "@langchain/core": "^1.1.24",
+    "@langchain/google-genai": "^2.1.18",
+    "@langchain/pinecone": "^1.0.1",
+    "@pinecone-database/pinecone": "^5.1.2",
+    "dotenv": "^16.6.1",
+    "langchain": "^1.2.24"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
